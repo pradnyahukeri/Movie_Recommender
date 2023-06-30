@@ -54,12 +54,12 @@ def nmf_recommender(query:dict,model=nmf_model,k=10)->list:
     recommendations = scores.head(10).index
     
     # return the top-k highst rated movie ids or titles
-    movies = pd.read_csv('../movies.csv')
+    movies = pd.read_csv('./movies.csv')
     top10=movies.set_index('movieId').loc[recommendations]['title']
     return top10
 
 def recommend_cosin(query,k=10):
-    df=pd.read_csv("../user_movie_data.csv")
+    df=pd.read_csv("./user_movie_data.csv")
     df=df.fillna(value=0)
     df.set_index('userId',inplace=True)
     
