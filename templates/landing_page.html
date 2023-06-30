@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="icon" type="image/x-icon" href="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW92aWUlMjByZWNvbW1lbmRlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60">
+    <link rel="stylesheet" href="./static/style.css">
+    
+</head>
+<body>
+    <nav><strong> find your favourite movie here!</strong></nav>
+    <h1>Decision Dill Movie recommender</h1>
+    <p id="rating_par">Discover your favourite Movies in the world of design and tech. 
+    </p>
+    <img src ="../static/movie.jpg" width="400" height="400">
+    
+    <p id="rating_par">Rate some movies on a scale 1 to 5 </p>
+
+    <form action="/recommendation">
+    <div class="input">
+    <label>Zootopia (2016):</label><input class="form" type="number" name="Zootopia (2016)" value="Zootopia (2016)" min="1" max="5">
+    <br>
+    <label >Rich (1994):</label><input class="form" type="number" name="Richie Rich (1994)" value="'Richie Rich (1994)" min="1" max="5">
+    <br>
+    <label>Lion King, The (1994):</label><input class="form" type="number" name=" Lion King, The (1994)" value=" Lion King, The (1994)" min="1" max="5">
+    <br>
+    <label>Beauty and the Beast (1991):</label><input class="form" type="number" name=" Beauty and the Beast (1991)" value="Beauty and the Beast (1991)" min="1" max="5">
+    <br>
+    </div>
+    <input type="submit" value="submit">    
+    </form>
+    <footer>
+    <a href="/recommendation">Recommendation</a>
+    </footer>
+</body>
+</html>
